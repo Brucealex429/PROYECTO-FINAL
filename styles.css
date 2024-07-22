@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar input {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+header .search-bar .search-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+header .search-bar .search-button i {
+    color: #333;
+}
+
+header .cart {
+    display: flex;
+    align-items: center;
+}
+
+header .cart span {
+    margin-right: 10px;
+}
+
+header .cart img {
+    max-height: 30px;
+}
+
+nav {
+    background-color: #28a745; 
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+main {
+    flex: 1;
+}
+
+main .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+main .hero img {
+    width: 100%;
+    height: 450px; 
+    object-fit: cover;
+}
+
+main .hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: hwb(123 1% 77%); /* Color del texto */
+}
+
+main .hero .hero-text h1 {
+    font-size: 36px;
+    font-family: 'Georgia', serif; 
+    margin-bottom: 10px;
+}
+
+main .hero .hero-text p {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+main .hero .hero-text small {
+    font-size: 18px;
+    color: #033003;
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .contact p {
+    margin: 0 10px;
+    flex: 1; 
+    text-align: center; 
+}
+
+
+.product-categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-categories .category {
+    background-color: #28a745; 
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    transition: background-color 0.3s;
+}
+
+.product-categories .category a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.product-categories .category:hover {
+    background-color: #218838;
+}
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #ffffff;
+    padding: 20px; 
+    margin: 15px;
+    width: 200px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.purchase-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.purchase-form h2 {
+    text-align: center;
+}
+
+.purchase-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.purchase-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.purchase-form button {
+    width: 100%;
+    padding: 8px 15px; 
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.purchase-form button:hover {
+    background-color: #218838;
+}
+
+.thank-you {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 5px; 
+    margin-bottom: 2px; 
+}
+
+.green-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 15px; 
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 10px; 
+}
+
+.green-button:hover {
+    background-color: #218838;
+}
+
+.back-to-home {
+    text-align: center;
+    margin-top: 15px; 
+}
+
+
+
+
+
+
+
+
+
+
+
